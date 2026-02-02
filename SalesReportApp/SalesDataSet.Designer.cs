@@ -287,7 +287,7 @@ namespace SalesReportApp {
             
             private global::System.Data.DataColumn columnOrderQtr;
             
-            private global::System.Data.DataColumn columnSales;
+            private global::System.Data.DataColumn _column_IIF_Fields_Amount_Value___1000___LightGreen____White__;
             
             private global::System.Data.DataColumn _column_Fields_Region_Value;
             
@@ -360,9 +360,9 @@ namespace SalesReportApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public global::System.Data.DataColumn SalesColumn {
+            public global::System.Data.DataColumn @__IIF_Fields_Amount_Value___1000___LightGreen____White__Column {
                 get {
-                    return this.columnSales;
+                    return this._column_IIF_Fields_Amount_Value___1000___LightGreen____White__;
                 }
             }
             
@@ -419,14 +419,14 @@ namespace SalesReportApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public ProductSalesRow AddProductSalesRow(string ProdCat, string SubCat, string OrderYear, string OrderQtr, string Sales, string @__Fields_Region_Value, string @__Fields_Manager_Value) {
+            public ProductSalesRow AddProductSalesRow(string ProdCat, string SubCat, string OrderYear, string OrderQtr, string @__IIF_Fields_Amount_Value___1000___LightGreen____White__, string @__Fields_Region_Value, string @__Fields_Manager_Value) {
                 ProductSalesRow rowProductSalesRow = ((ProductSalesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ProdCat,
                         SubCat,
                         OrderYear,
                         OrderQtr,
-                        Sales,
+                        @__IIF_Fields_Amount_Value___1000___LightGreen____White__,
                         @__Fields_Region_Value,
                         @__Fields_Manager_Value};
                 rowProductSalesRow.ItemArray = columnValuesArray;
@@ -455,7 +455,7 @@ namespace SalesReportApp {
                 this.columnSubCat = base.Columns["SubCat"];
                 this.columnOrderYear = base.Columns["OrderYear"];
                 this.columnOrderQtr = base.Columns["OrderQtr"];
-                this.columnSales = base.Columns["Sales"];
+                this._column_IIF_Fields_Amount_Value___1000___LightGreen____White__ = base.Columns["=IIF(Fields!Amount.Value > 1000, \"LightGreen\", \"White\")"];
                 this._column_Fields_Region_Value = base.Columns["=Fields!Region.Value"];
                 this._column_Fields_Manager_Value = base.Columns["=Fields!Manager.Value"];
             }
@@ -471,8 +471,10 @@ namespace SalesReportApp {
                 base.Columns.Add(this.columnOrderYear);
                 this.columnOrderQtr = new global::System.Data.DataColumn("OrderQtr", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnOrderQtr);
-                this.columnSales = new global::System.Data.DataColumn("Sales", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnSales);
+                this._column_IIF_Fields_Amount_Value___1000___LightGreen____White__ = new global::System.Data.DataColumn("=IIF(Fields!Amount.Value > 1000, \"LightGreen\", \"White\")", typeof(string), null, global::System.Data.MappingType.Element);
+                this._column_IIF_Fields_Amount_Value___1000___LightGreen____White__.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_column_IIF_Fields_Amount_Value___1000___LightGreen____White__");
+                this._column_IIF_Fields_Amount_Value___1000___LightGreen____White__.ExtendedProperties.Add("Generator_UserColumnName", "=IIF(Fields!Amount.Value > 1000, \"LightGreen\", \"White\")");
+                base.Columns.Add(this._column_IIF_Fields_Amount_Value___1000___LightGreen____White__);
                 this._column_Fields_Region_Value = new global::System.Data.DataColumn("=Fields!Region.Value", typeof(string), null, global::System.Data.MappingType.Element);
                 this._column_Fields_Region_Value.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_column_Fields_Region_Value");
                 this._column_Fields_Region_Value.ExtendedProperties.Add("Generator_UserColumnName", "=Fields!Region.Value");
@@ -687,17 +689,18 @@ namespace SalesReportApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public string Sales {
+            public string @__IIF_Fields_Amount_Value___1000___LightGreen____White__ {
                 get {
                     try {
-                        return ((string)(this[this.tableProductSales.SalesColumn]));
+                        return ((string)(this[this.tableProductSales.@__IIF_Fields_Amount_Value___1000___LightGreen____White__Column]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Sales\' in table \'ProductSales\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'=IIF(Fields!Amount.Value > 1000, \"LightGreen\", \"White\")\' in" +
+                                " table \'ProductSales\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableProductSales.SalesColumn] = value;
+                    this[this.tableProductSales.@__IIF_Fields_Amount_Value___1000___LightGreen____White__Column] = value;
                 }
             }
             
@@ -783,14 +786,14 @@ namespace SalesReportApp {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public bool IsSalesNull() {
-                return this.IsNull(this.tableProductSales.SalesColumn);
+            public bool Is__IIF_Fields_Amount_Value___1000___LightGreen____White__Null() {
+                return this.IsNull(this.tableProductSales.@__IIF_Fields_Amount_Value___1000___LightGreen____White__Column);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "18.0.0.0")]
-            public void SetSalesNull() {
-                this[this.tableProductSales.SalesColumn] = global::System.Convert.DBNull;
+            public void Set__IIF_Fields_Amount_Value___1000___LightGreen____White__Null() {
+                this[this.tableProductSales.@__IIF_Fields_Amount_Value___1000___LightGreen____White__Column] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

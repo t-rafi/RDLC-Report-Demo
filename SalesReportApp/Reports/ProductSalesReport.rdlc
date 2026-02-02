@@ -23,6 +23,9 @@
             <TablixColumn>
               <Width>0.81597in</Width>
             </TablixColumn>
+            <TablixColumn>
+              <Width>1in</Width>
+            </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
@@ -37,7 +40,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Prod Cat</Value>
+                              <Value>Catagory</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -70,7 +73,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Sub Cat</Value>
+                              <Value>Sub Catagory</Value>
                               <Style>
                                 <FontWeight>Bold</FontWeight>
                               </Style>
@@ -212,6 +215,39 @@
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox24</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <BackgroundColor>LightGrey</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox2">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Sales</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox2</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -411,12 +447,43 @@
                     </Textbox>
                   </CellContents>
                 </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Sales">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Sales.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Sales</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
               </TablixCells>
             </TablixRow>
           </TablixRows>
         </TablixBody>
         <TablixColumnHierarchy>
           <TablixMembers>
+            <TablixMember />
             <TablixMember />
             <TablixMember />
             <TablixMember />
@@ -436,9 +503,9 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>ProductSalesDataSet</DataSetName>
-        <Top>0.50917in</Top>
+        <Top>0.06944in</Top>
         <Height>0.5in</Height>
-        <Width>5.08302in</Width>
+        <Width>6.08302in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -497,8 +564,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox11</rd:DefaultName>
-        <Top>3.03473in</Top>
-        <Left>3.95108in</Left>
+        <Top>2.99306in</Top>
+        <Left>4.95108in</Left>
         <Height>0.25in</Height>
         <Width>1.13194in</Width>
         <ZIndex>2</ZIndex>
@@ -525,7 +592,7 @@
       </Border>
     </Style>
   </Body>
-  <Width>5.08302in</Width>
+  <Width>6.08302in</Width>
   <Page>
     <PageHeader>
       <Height>0.89806in</Height>
@@ -556,7 +623,7 @@
           <rd:DefaultName>Textbox9</rd:DefaultName>
           <Left>0.00607in</Left>
           <Height>0.36111in</Height>
-          <Width>5.07695in</Width>
+          <Width>6.07695in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -587,7 +654,7 @@
           <Top>0.43056in</Top>
           <Left>0.00607in</Left>
           <Height>0.25in</Height>
-          <Width>5.07695in</Width>
+          <Width>6.07695in</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -603,7 +670,7 @@
           <Source>Embedded</Source>
           <Value>logolightbg</Value>
           <Sizing>FitProportional</Sizing>
-          <Left>1.86229in</Left>
+          <Left>2.30673in</Left>
           <Height>0.36111in</Height>
           <Width>1.48843in</Width>
           <ZIndex>2</ZIndex>
@@ -647,7 +714,7 @@
           <Top>0.04167in</Top>
           <Left>0.00607in</Left>
           <Height>0.61111in</Height>
-          <Width>5.07695in</Width>
+          <Width>6.07695in</Width>
           <Style>
             <Border>
               <Style>None</Style>
