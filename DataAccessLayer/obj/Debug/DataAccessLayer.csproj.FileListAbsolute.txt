@@ -1,0 +1,6 @@
+C:\Users\jaki.islam\source\repos\RDLC_Sales_Report\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\jaki.islam\source\repos\RDLC_Sales_Report\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\jaki.islam\source\repos\RDLC_Sales_Report\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\jaki.islam\source\repos\RDLC_Sales_Report\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\jaki.islam\source\repos\RDLC_Sales_Report\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\jaki.islam\source\repos\RDLC_Sales_Report\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

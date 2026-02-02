@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DataAccessLayer/DataAccessLayer.csproj" Id="b0414edc-8eb2-45be-b0e2-50f43ce5a21c" />
+  <Project Path="SalesReportApp/SalesReportApp.csproj" Id="a04189fc-f2c5-4370-a1e8-3505f96af927" />
+</Solution>
